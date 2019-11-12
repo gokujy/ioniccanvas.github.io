@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Draw</ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="primary" (click)="clear()">
+        C
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <div #fixedContainer ion-fixed>
+      <ion-row>
+        <div class="box">
+          <canvas #imageCanvas (touchstart)="startDrawing($event)" (touchmove)="moved($event)" width="350"
+            height="400"></canvas>
+        </div>
+      </ion-row>
+    </div>
+  </ion-grid>
+</ion-content>
+<ion-footer>
+  <ion-row>
+    <ion-range (ionChange)="brushSize($event)" min="0" max="30" pin="true">
+        <ion-icon size="small" slot="start" name="brush"></ion-icon>
+        <ion-icon slot="end" name="brush"></ion-icon>
+    </ion-range>
+  </ion-row>
+  <ion-row class="cancolor" scrollable>
+    <ion-col *ngFor="let color of colors" [style.background]="color" class="color-block" tappable
+      (click)="selectColor(color)"></ion-col>
+  </ion-row>
+</ion-footer>

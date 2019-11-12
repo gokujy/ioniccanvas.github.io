@@ -1,0 +1,42 @@
+ion-header {
+  ion-button {
+    font-size: 23px;
+  }
+}
+
+.myimg {
+  text-align: center;
+  margin: 0 auto;
+}
+
+canvas {
+  display: block;
+  border: 1px solid rgb(187, 178, 178);
+  width: auto;
+  // height: 400px;
+  background: transparent;
+  // background: #ffffff;
+}
+
+.color-block {
+  height: 40px;
+}
+
+.cancolor {
+  ion-col {
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+}
+
+// .box {
+//   display: inline-block;
+//   background: url("https://cloud.githubusercontent.com/assets/4652816/12771954/41dccb10-ca68-11e5-9db8-a473f51426c8.jpg");
+//   background-size: cover;
+// }
+
+.accuracy{
+  ion-label{
+    font-size: 23px;
+  }
+}
