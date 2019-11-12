@@ -12,4 +12,5 @@
    - `ionic cordova prepare ios` to build and then start the appropriate XCode workspace and build/run on an iOS device 
    
    Check out live example - https://ioncanvas.sitesforhosting.co.in/
+   
    Note: Open in mobile view only else it's won't work.
